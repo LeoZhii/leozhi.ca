@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteRule ^bronze-medallion$ documents/Bronze-Medallion.pdf [L]
+RewriteRule ^bronze-cross$ documents/Bronze-Cross.pdf [L]
+RewriteRule ^resume$ documents/Resume-Leo-Zhi.pdf [L]
